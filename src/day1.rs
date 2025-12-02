@@ -13,7 +13,6 @@ pub fn solve(t: Vec<String>, j: usize) -> i32 {
         if pos % 100 == 0 {
             count += 1;
         }
-        dbg!(pos);
     }
     count
 }
