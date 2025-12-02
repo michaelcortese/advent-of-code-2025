@@ -5,10 +5,8 @@ pub fn solve(t: Vec<String>, j: usize) -> i32 {
         let (rot, amount) = i.split_at(1);
         let amount: i32 = amount.parse().unwrap();
         match rot {
-            "L" => pos = pos - amount,
-            "R" => {
-                pos = pos + amount;
-            }
+            "L" => pos -= amount,
+            "R" => pos += amount,
             _ => {}
         }
 
